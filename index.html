@@ -1,0 +1,166 @@
+# Tyler-the-Creator-2
+ttc website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler, the Creator</title>
+    <!-- Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Bangers & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #0d0d0d;
+        }
+        .text-title {
+            font-family: 'Bangers', cursive;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/FBBF24/1F2937?text=TYLER+THE+CREATOR');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            background-color: #262626;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+        .text-gradient-main {
+            background-image: linear-gradient(to right, #FB7185, #F472B6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#0d0d0d] text-gray-100">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-[#0d0d0d]/90 backdrop-blur-sm shadow-lg py-4">
+        <nav class="container mx-auto flex justify-center space-x-6 md:space-x-12">
+            <a href="#home" class="text-pink-400 hover:text-yellow-400 transition-colors duration-300 font-bold">HOME</a>
+            <a href="#biography" class="text-pink-400 hover:text-yellow-400 transition-colors duration-300 font-bold">BIOGRAPHY</a>
+            <a href="#discography" class="text-pink-400 hover:text-yellow-400 transition-colors duration-300 font-bold">DISCOGRAPHY</a>
+            <a href="#creative" class="text-pink-400 hover:text-yellow-400 transition-colors duration-300 font-bold">VENTURES</a>
+            <a href="#connect" class="text-pink-400 hover:text-yellow-400 transition-colors duration-300 font-bold">CONNECT</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center hero-bg rounded-2xl p-8">
+            <h1 class="text-5xl sm:text-7xl md:text-8xl font-bold text-white mb-4 text-title text-gradient-main drop-shadow-xl">TYLER, THE CREATOR</h1>
+            <p class="text-xl sm:text-2xl text-white max-w-2xl mb-8 drop-shadow-md">Exploring the creative universe of a visionary artist, from music to fashion and beyond.</p>
+            <div class="space-x-4">
+                <a href="#discography" class="bg-yellow-400 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors duration-300 shadow-lg">EXPLORE MUSIC</a>
+                <a href="#creative" class="border border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-black transition-colors duration-300 shadow-lg">DISCOVER VENTURES</a>
+            </div>
+        </section>
+
+        <!-- Biography Section -->
+        <section id="biography" class="my-20">
+            <div class="bg-gray-900 rounded-3xl p-8 md:p-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 text-title text-gradient-main">BIOGRAPHY</h2>
+                <div class="prose prose-invert text-lg space-y-4">
+                    <p>Tyler, the Creator, born Tyler Gregory Okonma, is an American artist known for his work as a rapper, singer, songwriter, and producer. He first gained attention in the early 2010s as a founding member of the music collective Odd Future.</p>
+                    <p>Known for his creative and unique style, Tyler has continued to evolve his sound over his career. His projects often explore themes of identity and personal expression, while his artistic work extends into fashion, film, and graphic design.</p>
+                    <p>With critically acclaimed albums like *Flower Boy* and the Grammy-winning *IGOR*, he has become a respected and influential figure in modern music.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discography Section -->
+        <section id="discography" class="my-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-title text-gradient-main">DISCOGRAPHY</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">Wolf</p>
+                    <p class="text-gray-400">2013</p>
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">Cherry Bomb</p>
+                    <p class="text-gray-400">2015</p>
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">Flower Boy</p>
+                    <p class="text-gray-400">2017</p>
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">IGOR</p>
+                    <p class="text-gray-400">2019</p>
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">CALL ME IF YOU GET LOST</p>
+                    <p class="text-gray-400">2021</p>
+                </div>
+                <div class="card text-center">
+                    <p class="text-xl font-semibold">CALL ME IF YOU GET LOST: The Estate Sale</p>
+                    <p class="text-gray-400">2023</p>
+                </div>
+            </div>
+            
+            <!-- Music Section -->
+            <div class="mt-20">
+                <h3 class="text-3xl font-bold text-center mb-6 text-title text-yellow-400">Featured Music Video</h3>
+                <div class="relative overflow-hidden rounded-xl w-full" style="padding-top: 56.25%;">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/HmCgGvU4-H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creative Ventures Section -->
+        <section id="creative" class="my-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-title text-gradient-main">CREATIVE VENTURES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">GOLF WANG</h3>
+                    <p>Explore Tyler’s vibrant and colorful clothing brand, known for its playful designs and distinctive aesthetic.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">GOLF le FLEUR*</h3>
+                    <p>Learn about his luxury fashion and fragrance line, showcasing a more refined and elegant side of his creativity.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">Directorial Work</h3>
+                    <p>Discover his work behind the camera, including the imaginative music videos he directs for himself and other artists.</p>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-pink-400">Odd Future (OFWGKTA)</h3>
+                    <p>A look back at the influential collective that launched his career and shaped a new era of music and art.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect" class="my-20">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-title text-gradient-main">CONNECT</h2>
+            <div class="flex justify-center space-x-6 md:space-x-10">
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Twitter</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">YouTube</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition-colors duration-300">Shop</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 text-gray-500 text-sm">
+        <p>&copy; 2024 Tyler, the Creator Fan Site. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
